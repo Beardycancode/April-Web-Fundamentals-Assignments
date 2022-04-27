@@ -1,0 +1,104 @@
+body {
+    background: url("https://i.pinimg.com/originals/61/79/ba/6179bac03a8f13857c55d90e3ceaf063.jpg");
+    background-size: 40%;
+    background-attachment: fixed;
+    margin: 0;
+  }
+  .container {
+    width: 600px;
+    margin: 30px auto;
+    /* background-image: url('https://i.ytimg.com/vi/CvltMRiVNME/maxresdefault.jpg'); */
+    background: linear-gradient(
+      100deg,
+      rgb(25, 75, 75),
+      rgb(79, 176, 171),
+      rgb(79, 176, 171),
+      rgb(133, 215, 193),
+      rgb(207, 207, 166),
+      rgb(36, 113, 113)
+    );
+    height: 220px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .container2 {
+    width: 600px;
+    margin: 40px auto;
+    /* background-image: url('https://i.ytimg.com/vi/CvltMRiVNME/maxresdefault.jpg'); */
+    background: linear-gradient(
+      100deg,
+      rgb(25, 75, 75),
+      rgb(79, 176, 171),
+      rgb(79, 176, 171),
+      rgb(133, 215, 193),
+      rgb(207, 207, 166),
+      rgb(36, 113, 113)
+    );
+    height: 220px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .logo {
+    border-radius: 80px;
+  }
+  .container h2 {
+    color: green;
+  }
+  .container h4 {
+    font-weight: 300;
+    font-family: "Square Peg", cursive;
+    margin-top: -20px;
+  }
+  .container2 h2 {
+    font-size: 40px;
+    margin-top: -6px;
+  }
+  .container2 h4 {
+    margin-top: -30px;
+    font-weight: 100;
+  }
+  .container2 .contacts {
+    padding-top: 20px;
+    height: 67.5px;
+    /* width: 600px;
+    background-color: white; */
+    /* align-items: center; */
+    display: flex;
+  }
+  .container2 .contacts img {
+    height: 50px;
+    width: 9%;
+    margin: 4px auto;
+  }
+  .container2 .contacts h4 {
+    margin: 14px auto;
+    margin-left: -70px;
+  }
+  .container2 .contacts2 {
+    padding-bottom: 10px;
+    height: 68px;
+    /* width: 400px; */
+    /* background-color: white; */
+    /* align-items: center; */
+    display: flex;
+  }
+  .container2 .contacts2 img {
+    height: 50px;
+    width: 9%;
+    margin: 2px auto;
+    margin-left: 80px;
+  }
+  .container2 .contacts2 h4 {
+    margin: 2px auto;
+    margin-left: -10px;
+  }
+  .foot {
+    width: 600px;
+    background-color: white;
+  }
+  h1{
+      margin: 30px auto;
+      width: 600px;
+      background-color: black;
+      color: white;
+  }
