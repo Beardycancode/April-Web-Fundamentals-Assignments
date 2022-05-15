@@ -1,0 +1,26 @@
+.container{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.square{
+    background-color: rgb(179, 66, 66);
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    background-color: rgb(18, 24, 43);
+    height: 70vh;
+    width: 70vh;
+    border-radius: 310px;
+}
+.circle:hover{
+    cursor: pointer;
+    background-color: rgb(86, 90, 94);
+    border: 2px inset blue;    
+}
