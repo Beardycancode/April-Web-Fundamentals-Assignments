@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.square{
+    background: linear-gradient(rgb(61, 59, 59),black);
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    background: linear-gradient(red,white);
+    height: 70vh;
+    width: 70vh;
+    border-radius: 310px;
+}
+.circle:hover{
+    cursor: grabbing;
+    background: linear-gradient(blue,white);
+}
