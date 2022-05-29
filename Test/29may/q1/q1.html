@@ -1,0 +1,55 @@
+<h1>Var:</h1><br>
+•	can be declared outside any function to be used inside any function<br>
+•	can be declared inside any function or any other {} which are of only if or if -else or switch etc. and can be used anywhere inside the function<br>
+•	can be changed again and again anywhere<br>
+<br>
+<br>
+// var is a function scope<br>
+if(true){<br>
+    var varVariable = 'This is var';<br>
+    var varVariable = 'This is var again';<br>
+}
+
+console.log(varVariable);<br>
+<br>
+<br>
+<br>
+<br>
+<h1>Let:</h1><br>
+•	can be declared outside any function to be used inside any function<br>
+•	if declared inside any function or any other {} which are of only if or if-else or switch etc. and can't be used anywhere inside the function and can be only used inside statement<br>
+•	can be changed again and again only inside the statement in which they are made in<br>
+<br>
+<br>
+
+ // let is a block scope<br>
+                       if(true){<br>
+ let letVariable = 'This is let';<br>
+
+ // let variable can't re-define but we can re-assign value<br>
+ <br>
+ <br>
+ <br>
+ <br>
+<h1>Const:</h1><br>
+•	can be declared outside any function to be used inside any function<br>
+•	can be declared inside any function or any other {} which are of only if or if-else or switch etc. and can be used anywhere inside the function<br>
+•	cannot be changed again and agan anywhere, if tried to, will result in an error<br>
+<br>
+<br>
+
+
+//const variable can't re-define and re-assign value<br>
+if(true){<br>
+    const constVarible = {<br>
+        name: 'JavaScript',<br>
+        age: '25 years',<br>
+    };<br>
+    constVarible.name = 'JS';<br>
+    <br>
+    console.log(constVarible) // {name: 'JS',age: '25 years'} <= we can update const variable declared object <br>
+}<br>
+<br>
+<br>
+<br>
+<br>
