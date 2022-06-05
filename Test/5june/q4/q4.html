@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question4</title>
+    <link rel="stylesheet" href="q2.css">
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
+        }
+        body {
+          display: flex;
+          flex-direction: column;
+          gap: 60px;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background: rgb(38, 37, 37);
+        }
+        a {
+          position: relative;
+          background: #444;
+          color: whitesmoke;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 1.5em;
+          letter-spacing: 0.1em;
+          padding: 10px 30px;
+          transition: 0.5s;
+        }
+        a:hover {
+          letter-spacing: 0.25em;
+          background: var(--clr);
+          color: var(--clr);
+          box-shadow: 0 0 35px var(--clr);
+        }
+        a::before {
+          content: "";
+          position: absolute;
+          inset: 2px;
+          background: rgb(38, 37, 37);
+        }
+        a span {
+          position: relative;
+          z-index: 1;
+        }
+        a i {
+          position: absolute;
+          inset: 0;
+          display: block;
+        }
+        a i::before {
+          content: "";
+          position: absolute;
+          top: -3.5px;
+          left: 80%;
+          width: 10px;
+          height: 5px;
+          border: 2px solid var(--clr);
+          background: #444;
+          transform: translateX(-50%);
+          transition: 0.5s;
+        }
+        a:hover i::before {
+          width: 20px;
+          left: 20%;
+        }
+        a i::after {
+          content: "";
+          position: absolute;
+          bottom: -3.5px;
+          left: 20%;
+          width: 10px;
+          height: 5px;
+          border: 2px solid var(--clr);
+          background: #444;
+          transform: translateX(-50%);
+          transition: 0.5s;
+        }
+        a:hover i::after {
+          width: 20px;
+          left: 80%;
+        }
+        #primes{
+          background-color: aliceblue;
+          letter-spacing: 0.3em;
+          box-sizing: border-box;
+        }
+        #integer {
+          background-color: aliceblue;
+          letter-spacing: 0.3em;
+          box-sizing: border-box;
+        }
+        h1 {
+          background-color: rgb(119, 168, 210);
+          z-index: 1;
+          padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CLick below to get prime number</h1>
+    <a href="#" style="--clr: red"
+      ><span onclick="prime()">Click</span><i></i
+    ></a>
+    <p id="primes"></p>    
+
+</body>
+<script>
+    function prime()
+    {
+        let n= prompt("enter your number:");
+        let prime= 0; 
+        let user=""; 
+        if(n!= null)
+        
+
+      { 
+                 let b = n; 
+                 let count = 0; 
+                 let index = 0; 
+                 for(let i =2; i<n;i++) 
+                 { 
+                     n++; 
+                     let j =0; 
+                     for(j =2; j<=i;j++) 
+                     { 
+                     if(i%j == 0) 
+                     break; 
+                     } 
+                     if(j == i) 
+                     { 
+                     count = j; 
+                     index++; 
+                     } 
+                     if(index == b) 
+                     break; 
+                 } 
+                 document.getElementById("primes").innerHTML = count; 
+    }
+    else 
+             { 
+                 document.getElementById("primes").innerHTML = "Sorry Empty value not allow :("; 
+             } 
+         } 
+</script>
+</html>
