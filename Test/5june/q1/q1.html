@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question1</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Question 1: In how many types can we create functions? State the difference between those types by giving examples</h1><br><hr>
+    <h3>There can be 4 different types of user-defined functions, they are: Function with no arguments and no return value. Function with no arguments and a return value. Function with arguments and no return value.</h3><br>
+    <h3>1. Functions with arguments and return values</h3><br>
+    <h4>This function has arguments and returns a value:</h4><br>
+    #include <stdio.h><br>
+        void main()<br>
+        {<br>
+          int sub(int,int); //function with return value and arguments<br>
+          int x=10,y=7;<br>
+          int res = sub(x,y);<br>
+          printf("x-y = %d",res);<br>
+        }<br>
+        int sub(int a,int b) //function with return value and arguments<br>
+        {<br>
+          return(a-b);  // return value<br>
+        }<br>
+        <hr>
+        <br><br><br>
+        <h3>2. Functions with arguments and without return values</h3><br>
+        <h4>This function has arguments, but it does not return a value</h4><br>
+        #include <stdio.h><br>
+            int main()<br>
+            {<br>
+              void sum(float,float); //function with arguments and no return value<br>
+              float x=10.56,y=7.22;<br>
+              sum(x,y);<br>
+            }<br>
+            void sum(float a,float b) //function with arguments and no return value<br>
+            {<br>
+              float z = a+b;<br>
+              printf("x + y = %f",z);<br>
+            }<br>
+            <hr>
+            <br><br><br>
+            <h3>3. Functions without arguments and with return values</h3><br>
+            <h4>This function has no arguments, but it has a return value:</h4><br>
+            #include<stdio.h><br>
+                int main()<br>
+                {<br>
+                  int sum();<br>
+                  int c = sum();<br>
+                  printf("Sum = %d",c);<br>
+                }<br>
+                int sum() //function with no arguments and return data type<br>
+                {<br>
+                  int x=10,y=20,z=5;<br>
+                  printf("x = %d ; y = %d ; z = %d \n",x,y,z);<br>
+                  int sum = x+y+z;<br>  
+                  return(sum);<br>
+                }<br>
+                <hr>
+                <br><br><br>
+                <h3>4. Functions without arguments and without return values</h3><br>
+                <h4>This function has no arguments and no return value:</h4><br>
+                #include<stdio.h><br>
+                    int main()<br>
+                    {<br>
+                      void sum();<br>
+                      sum();<br>
+                    }<br>
+                    void sum() //function with no arguments and return data type<br>
+                    {<br>
+                      int x=15,y=35,z=5;<br>
+                      printf("x = %d ; y = %d ; z = %d \n",x,y,z);<br>
+                      int sum = x+y+z;<br>
+                      printf("Sum = %d",sum);<br>
+                    }<br>
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+</body>
+</html>
