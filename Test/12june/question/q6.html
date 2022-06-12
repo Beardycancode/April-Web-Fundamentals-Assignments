@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question6</title>
+</head>
+<body>
+    Given, <br>
+    array = [4, 6, 3, 9,7, 5]; <br>
+    <br>
+
+    <script>
+        let array = [4, 6, 3, 9,7, 5];
+
+// sort the array
+
+let sortedArray = array.sort();
+document.write("sorted array is"+array+"<br>"+"largest  number is  as per nth value is :");
+function largest(sortedArray){
+    let maximum = sortedArray[0];
+
+    var n = prompt("Enter your desired number");
+
+    n = parseInt(n);
+
+    for (let i = n; i < sortedArray.length; i++) {
+         if (sortedArray[i] > maximum) {
+            maximum = sortedArray[i]
+         }
+
+         return maximum   
+    }
+}
+document.write(largest(sortedArray));
+    </script>
+</body>
+</html>
