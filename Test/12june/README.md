@@ -18,4 +18,4 @@ Q5:-https://beardycancode.github.io/April-Web-Fundamentals-Assignments/Test/12ju
 
 
 
-Q6:-https://beardycancode.github.io/April-Web-Fundamentals-Assignments/Test/12june/question6/q6.html
+Q6:-https://beardycancode.github.io/April-Web-Fundamentals-Assignments/Test/12june/question/q6.html
