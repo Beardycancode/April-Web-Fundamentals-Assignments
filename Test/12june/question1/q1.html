@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    Write a function to check if geekster exists in your array var list = ['geek', 'geekster', 'geeky'];If it exists  add some code to find the index of geekster and remove that item.<br>
+    Ans)<br>
+
+
+    <script>
+         var values=["geek", "geekster", "geeky"];  
+  
+  if(values.indexOf("geekster") !== -1)  
+  {  
+          alert("Yes, the value exists!")  
+  }   
+  else  
+  {  
+          alert("No, the value is absent.")  
+  }  
+  document.write(values.indexOf("geekster")+"="+"index"+"<br>");
+  var spliced = values.splice(1, 1);
+    document.write("Removed element: " + spliced + "<br>");
+    document.write("Remaining elements: " + values);
+    </script>
+</body>
+</html>
