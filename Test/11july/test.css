@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    
+height:55px;
+width: 379px;
+background: #8acc35;
+border-radius: 20px;
+filter: drop-shadow(-20px 20px 40px #8acc35 );
+transition: 0.5s ease-in-out;
+
+}
+.card.active{
+height: 420px;
+
+}
+.toggle{
+position: absolute;
+bottom: -60px;
+left: 50%;
+transform: translateX(-50%);
+width: 70px;
+height: 60px;
+background: #8acc35;
+border-bottom-left-radius: 35px;
+border-bottom-right-radius: 35px;
+cursor: pointer;
+}
+.toggle::before{
+content: "";
+position: absolute;
+left: -35px;
+width: 35px;
+height: 35px;
+background: transparent;
+border-top-right-radius: 35px;
+box-shadow: 11px -10px 0 10px #8acc35;
+}
+.toggle::after{
+content: "";
+position: absolute;
+right: -35px;
+width: 35px;
+height: 35px;
+background: transparent;
+border-top-left-radius: 35px;
+box-shadow: -11px -10px 0 10px #8acc35;
+}
+.toggle span{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%) rotate(405deg);
+width: 10px; 
+height: 10px;
+border-bottom: 3px solid #fff;
+border-right: 3px solid #fff;
+}
+.card.active .toggle span{
+transform: translate(-50%,-70%) rotate(225deg);
+}
+.contentBx{
+position: absolute;
+inset: 0;
+overflow: hidden;
+}
+.contentBx .content{
+
+position: relative;
+padding: 20px;
+text-align: center;
+z-index: 10;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.contentBx .content h2{
+    margin-top: -5px;
+color: #fff;
+font-weight: 500;
+font-size: 1.25rem;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+line-height: 1.15em;
+}
+.contentBx .content h2 span{
+font-size: 0.75 rem;
+font-weight: 400;
+text-transform: initial;
+color: black;
+}
+
+.data{
+position: relative;
+width: 250px;
+height: 250px;
+/* background: #fff; */
+margin-top: 20px;
+/* box-shadow: -10px 10px 10px rgb(26, 25, 25,0.4); */
+}
+
+.content button{
+position: relative;
+margin-top: 20px;
+padding: 10px 35px;
+border-radius: 25px;
+border: none;
+outline: none;
+cursor: pointer;
+font-size: 1em;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+font-weight: 500;
+color: black;
+box-shadow: -10px 10px 10px rgb(26, 25, 25,0.7);
+}
